@@ -1,3 +1,5 @@
+// author: Colin Chen @ https://colinchen.cc
+
 // toggle theme
 function toggleTheme() {
     const root = document.getElementById('app');
