@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Colin Chen's Personal Website</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Colin Chen's Resume - Software Engineer, Cloud, Deep Learning" />
+</head>
+
+<body>
+  <div class="app" id="app" data-theme="light">
+    <div class="topbar" style="max-width:1000px;margin:0 auto 16px">
+      <div>
+        <strong class="name">Jiaqi (Colin) Chen ☕</strong>
+        <div style="color:var(--muted);font-size:13px">Resume</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="window.print()">Print</button>
+        <button class="btn ghost" id="themeBtn" onclick="toggleTheme()">Toggle theme</button>
+      </div>
+    </div>
+
+    <div class="container" id="resumeRoot">
+      <!-- left column -->
+      <aside class="card">
+        <div class="profile">
+          <img src="./img/profile.png" alt="Profile Picture" class="profile-pic" />
+          <div class="name">Jiaqi Chen</div>
+          <div class="subtitle">Software Engineer · Cloud · AI</div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="contact">
+            <div><strong>Email📧:</strong> <a class="link"
+                href="mailto:colin.jiaqichen@gmail.com">colin.jiaqichen@gmail.com</a></div>
+            <div><strong>Phone📞:</strong> (201) 577-8468</div>
+            <div><strong>Website🌐:</strong> <a class="link" href="https://colinchen.cc" target="_blank"
+                rel="noopener">colinchen.cc</a></div>
+            <div><strong>Locale📍:</strong> Hoboken, NJ</div>
+          </div>
+        </div>
+
+        <h3 class="section-title">Education</h3>
+        <div style="font-size:14px;line-height:1.4">
+          <div class="schools">Stevens Institute of Technology — Hoboken, NJ</div>
+          <div class="meta">M.S. Computer Science <br> Sep 2023 – Dec 2024</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">
+            Relevant Courses: <br> Web Programming, Concurrent Programming, Artificial Intelligence, Deep Learning, Reinforcement Learning, Parallel Programming, Compiler
+            Design, Formal Verification.
+          </div>
+
+          <div class="schools">The Chinese University of Hong Kong, Shenzhen</div>
+          <div class="meta">B.Eng Computer Science & Engineering <br> Minor in Philosophy <br> Sep 2018 – Jun 2023</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:13px">
+            Relevant Courses: <br> Operating Systems, Computer Architecture, Database Systems, Parallel Computing.
+          </div>
+        </div>
+
+        <h3 class="section-title">Programming Languages</h3>
+        <div class="skills-list" style="margin-bottom:6px">
+          <span class="skill">Python</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">HTML/CSS</span>
+          <span class="skill">C++</span>
+          <span class="skill">CUDA</span>
+          <span class="skill">OCaml</span>
+          <span class="skill">SQL</span>
+        </div>
+        <h3 class="section-title">Tools</h3>
+        <div class="skills-list" style="margin-top:8px">
+          <span class="skill">AWS</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">React/Next.js</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">Express</span>
+          <span class="skill">Nsight</span>
+        </div>
+
+        <h3 class="section-title">Quick Links</h3>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <a class="pill" href="https://colinchen.cc" target="_blank" rel="noopener">🏠 Personal Website</a>
+          <a class="pill" href="https://github.com/TOXXXX" target="_blank" rel="noopener">💻 GitHub</a>
+          <a class="pill" href="https://leetcode.com/appletox_chen" target="_blank" rel="noopener">💻 LeetCode</a>
+          <a class="pill" href="https://www.linkedin.com/in/colin-jiaqi-chen" target="_blank" rel="noopener">💼 LinkedIn</a>
+        </div>
+
+        <div class="footer" style="margin-top:18px"></div><div class="footer" style="margin-top:18px">
+          This website is hosted on <a href="https://aws.amazon.com/">AWS</a> ☁️.
+        </div>
+      </aside>
+
+      <!-- right column -->
+      <main class="card">
+        <section class="section">
+          <h3 class="section-title">Work Experiences</h3>
+
+          <div class="job">
+            <div>
+              <h4 class="role">L8 Coding and Tasking Reviewer — <a href="https://www.outlier.ai/">Outlier AI</a></h4>
+              <div class="date">Apr 2025 – Present</div>
+              <ul class="bullets">
+                <li>Performed optimizations and quality controls for 100+ code-related data annotation delivery items.</li>
+                <li>Refactored and debugged 100+ AI-generated results & codes in Python, JavaScript or C++ for supervised fine-tuning.
+                </li>
+              </ul>
+            </div>
+            <div class="locale">Remote</div>
+          </div>
+
+          <div class="job">
+            <div>
+              <h4 class="role">Software Engineer — <a href="https://www.iflytek.com/">iFlytek</a></h4>
+              <div class="date">May 2022 – Aug 2022</div>
+              <ul class="bullets">
+                <li>Achieved >99% accuracy in image classification pipeline using OpenCV (Python) for production quality
+                  control.</li>
+                <li>Implemented Brenner algorithm in C++ for image quality evaluation; automated industrial camera setup
+                  end-to-end.</li>
+                <li>Debugged and resolved issues across 100+ NVIDIA embedded graphic-processing devices.</li>
+              </ul>
+            </div>
+            <div class="locale">Guangzhou, China</div>
+          </div>
+
+          <div class="job">
+            <div>
+              <h4 class="role">Freelance Developer — <a href="https://www.fiverr.com/appletox_chen">Fiverr</a></h4>
+              <div class="date">Feb 2025 – Present</div>
+              <ul class="bullets">
+                <li>Debugged and optimized an OpenGL project with Visual Studio, eliminated thread conflicts and delivered
+                  within 24 hours, delivering >20× speedups on client's workloads.</li>
+                <li>Provided customized CUDA function design to match client's GPU performance & data input
+                  characteristics.</li>
+              </ul>
+            </div>
+            <div class="locale">Remote</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Project Experiences</h3>
+
+          <div class="job">
+            <div>
+              <h4 class="role">AWS Website Hosting -- <a href="https://colinchen.cc">Colin Chen</a></h4>
+              <div class="date">Aug 2025 – Present</div>
+              <ul class="bullets">
+                <li>Designed & deployed cost-efficient static website architecture using S3 + CloudFront + Route 53.</li>
+                <li>Confi gured S3 bucket for static web hosting with an Origin Access Control, ensuring private content access through
+designated CloudFront Distribution.</li>
+                <li>Implemented CloudFront distribution with custom domain and SSL certificate via AWS Certificate Manager,
+enabling HTTPS for improved security and SEO.</li>
+                <li>Integrated Route 53 hosted zone with ALIAS records to support apex and www records for reliable DNS.</li>
+                <li>Delivered highly available, globally accessible content with low operational overhead and near-zero hosting costs.</li>
+              </ul>
+            </div>
+            <div class="locale">Remote</div>
+          </div>
+
+          <div class="job">
+            <div>
+              <h4 class="role">Developer, Team Leader — <a href="https://github.com/TOXXXX/TravelCompanion">Travel Companion</a></h4>
+              <div class="date">Sep 2024 – Dec 2024</div>
+              <ul class="bullets">
+                <li>Built RESTful API with Express.js and Node.js for core CRUD functionality; used Mongoose for
+                  query-oriented schemas.</li>
+                <li>Enable authenticated AJAX using Fetch API for client-side file manipulation.</li>
+                <li>Supported embedded map, route search and display with Mapbox API.</li>
+                <li>Secured the application with authentications using Cookies and anti-XSS module.</li>
+                <li>Developed a user-matching algorithm using temporal-spatial signals for travel plan alignment.</li>
+              </ul>
+            </div>
+            <div class="locale">Hoboken, NJ</div>
+          </div>
+
+          <div class="job">
+            <div>
+              <h4 class="role">CUDA Developer -- 3D Computational Fluid Dynamics Simulation</h4>
+              <div class="date">Feb 2024 – May 2024</div>
+              <ul class="bullets">
+                <li>Engineered a 3D computational fluid dynamic program with C++ based on Lattice-Boltzmann Method.</li>
+                <li>Achieved 170x speedup with GPU acceleration by parallelizing the program using CUDA.</li>
+                <li>Optimized CUDA version of the algorithm with register reuse and binning, reducing GPU global memory access and improving response rate by 34%.</li>
+                <li>Identified program bottleneck using Nsight and improved GPU throughput by 35%.</li>
+              </ul>
+            </div>
+            <div class="locale">Hoboken, NJ</div>
+          </div>
+
+          <div class="job">
+            <div>
+              <h4 class="role">Deep Learning Research Engineer — <a href="https://github.com/TOXXXX/Cyblogger">Cyblogger</a></h4>
+              <div class="date">Sep 2023 – Dec 2023</div>
+              <ul class="bullets">
+                <li>Cleaned and mapped labels using NumPy; fine-tuned 15 network designs across 5 NLP classification tasks
+                  in TensorFlow.</li>
+                <li>Improved results by balancing datasets via reclassification & relabeling; achieved >70% accuracy on
+                  binary tasks using multi-class training strategies.</li>
+              </ul>
+            </div>
+            <div class="locale">Hoboken, NJ</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Technical Highlights</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)">
+              <strong class="role">Web & Cloud</strong>
+              <div class="meta" style="margin-top:6px">Node.js, Express, MongoDB, AWS (S3, CloudFront, Route53), React/Next.js</div>
+              <div class="progress" aria-hidden><i style="width:90%"></i></div>
+            </div>
+            <div style="padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)">
+              <strong class="role">Systems & Performance</strong>
+              <div class="meta" style="margin-top:6px">C++, CUDA, Nsight, GPU optimization, Embedded NVIDIA devices</div>
+              <div class="progress" aria-hidden><i style="width:70%"></i></div>
+            </div>
+            <div style="padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)">
+              <strong class="role">Machine Learning</strong>
+              <div class="meta" style="margin-top:6px">TensorFlow, NLP classification, Data Cleaning & Augmentation</div>
+              <div class="progress" aria-hidden><i style="width:60%"></i></div>
+            </div>
+            <div style="padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.01),transparent)">
+              <strong class="role">Formal & Languages</strong>
+              <div class="meta" style="margin-top:6px">OCaml, Dafny, Verilog — formal verification interest</div>
+              <div class="progress" aria-hidden><i style="width:70%"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 class="section-title">Personal Interests</h3>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <span class="pill">Lacanian Psychoanalysis</span>
+            <span class="pill">Photography</span>
+            <span class="pill">LeetCode</span>
+            <span class="pill">Traveling</span>
+            <span class="pill">Steam Deck Hacking</span>
+          </div>
+        </section>
+
+        <div style="margin-top:6px;font-size:12px;color:var(--muted)">
+          Last updated: September 2025
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
