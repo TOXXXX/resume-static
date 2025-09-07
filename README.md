@@ -1,2 +1,3 @@
 # resume-static
-An simple static website to show your resume
+An simple static website to show your resume.
+Created by Colin Chen.
