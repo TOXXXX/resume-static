@@ -1,0 +1,2 @@
+# resume-static
+An simple static website to show your resume
